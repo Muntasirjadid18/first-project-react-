@@ -683,6 +683,7 @@ textarea {
   background-image: url('../src/images/bg-testimonial.jpg'); 
   position: relative;
   color: #fff;
+  
 }
 
 .testimonials-block:before {

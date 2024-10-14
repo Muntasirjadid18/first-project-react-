@@ -6,7 +6,7 @@ const worksData = [
     {
       id: 1,
       link: 'https://www.google.com',
-      image: require('..\images\img2.jpg'),
+      image: require('../images/img2.jpg'),
       title: 'Lonely Path',
       subtitle: 'Web Design'
     },
@@ -27,7 +27,7 @@ const worksData = [
     {
       id: 4,
       link: 'https://www.google.com',
-      image: require('..images/img5.jpg'),
+      image: require('../images/img5.jpg'),
       title: 'Nature Patterns',
       subtitle: 'Branding'
     },
@@ -41,21 +41,21 @@ const worksData = [
     {
       id: 6,
       link: 'https://www.google.com',
-      image: require('../images/img7.jpg'),
+      image: require('../images/img5.jpg'),
       title: 'Winter Sonata',
       subtitle: 'Web Design'
     },
     {
       id: 7,
       link: 'https://www.google.com',
-      image: require('../images/img8.jpg'),
+      image: require('../images/img5.jpg'),
       title: 'Lonely Path',
       subtitle: 'Branding'
     },
     {
       id: 8,
       link: 'https://www.google.com',
-      image: require('../images/img9.jpg'),
+      image: require('../images/img5.jpg'),
       title: 'Appreciation',
       subtitle: 'Photography'
     },

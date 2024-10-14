@@ -1,7 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
+import Pagination from 'react-bootstrap/Pagination';
 const worksData = [
     {
       id: 1,
@@ -41,32 +42,42 @@ const worksData = [
     {
       id: 6,
       link: 'https://www.google.com',
-      image: require('../images/img5.jpg'),
+      image: require('../images/img7.jpg'),
       title: 'Winter Sonata',
       subtitle: 'Web Design'
     },
     {
       id: 7,
       link: 'https://www.google.com',
-      image: require('../images/img5.jpg'),
+      image: require('../images/img8.jpg'),
       title: 'Lonely Path',
       subtitle: 'Branding'
     },
     {
       id: 8,
       link: 'https://www.google.com',
-      image: require('../images/img5.jpg'),
+      image: require('../images/img9.jpg'),
       title: 'Appreciation',
       subtitle: 'Photography'
     },
     {
       id: 9,
       link: 'https://www.google.com',
-      image: require('../images/img2.jpg'),
+      image: require('../images/img10.jpg'),
       title: 'Happy Days',
       subtitle: 'Web Design'
     }
   ]
+
+  let active = 2;
+let items = [];
+for (let number = 1; number <= 5; number++) {
+  items.push(
+    <Pagination.Item key={number} active={number === active}>
+      {number}
+    </Pagination.Item>,
+  );
+}
 
 export default function AppWorks(){
 return(
@@ -75,7 +86,7 @@ return(
     <div className='title-holder'>
         <h2>Our works</h2>
         <div className='subtitle'>our awesome works</div>
-    <Row className='portfolioList'>
+    <Row className='portfoliolist'>
         {
             worksData.map(works => {
                 return(
@@ -94,6 +105,7 @@ return(
             })
         }
       </Row>
+      <Pagination>{items}</Pagination>
       </div>
     </Container>  
     </section>

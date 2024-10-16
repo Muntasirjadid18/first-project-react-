@@ -1,4 +1,4 @@
- html {
+html {
   box-sizing: border-box;
 }
 
@@ -680,10 +680,9 @@ textarea {
   background-position: 50% 0;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url('../src/images/bg-testimonial.jpg'); 
+  background-image: url('images/bg-testimonial.jpg');
   position: relative;
   color: #fff;
-  
 }
 
 .testimonials-block:before {
@@ -1176,4 +1175,4 @@ textarea {
     font-size: 26px;
     margin: 0;
   }
-} 
+}
